@@ -14,11 +14,11 @@ socialMedia.insert({ name: "FaceBook", c: "Meta" }, (data: any, error: any) => {
 socialMedia.insert({ name: "SnapChat", c: "" }, (data: any, error: any) => {})
 socialMedia.insert({ name: "Twitter", c: "" }, (data: any, error: any) => console.log(data))
 
-// socialMedia.update({ name: "Twitter" }, { name: "X" }, false, (data: any, error: any) => {
-//     console.log(data)
-// })
+socialMedia.update({ name: "Twitter" }, { name: "X" }, false, (data: any, error: any) => {
+    console.log(data)
+})
 
-// socialMedia.find({ c: "Meta" }, (data: any, error: any) => console.log(data)) // Instagram and FaceBook
-// socialMedia.findOne({ c: "Google" }, (data: any, error: any) => console.log(data)) // YouTube
+socialMedia.find({ c: "Meta" }, (data: any, error: any) => console.log(data)) // Instagram and FaceBook
+socialMedia.findOne({ c: "Google" }, (data: any, error: any) => console.log(data)) // YouTube
 
-// socialMedia.delete({ name: "Twitter" }, (data: any, error: any) => {})
+socialMedia.delete({ name: "Twitter" }, (data: any, error: any) => {})
