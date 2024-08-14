@@ -35,7 +35,9 @@ socialMedia.insert(
 ```
 
 ### Search Query
-A special query for searching if fields have specific characters. ⚠ It is case-sensitive
+A special query for searching if fields have specific characters.
+
+**⚠ It is case-sensitive**
 ```js
 socialMedia.search(
     { name: "n" },
