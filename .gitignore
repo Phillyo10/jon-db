@@ -1,0 +1,7 @@
+#files
+*.js
+*.json
+
+#folders
+/db
+/node_modules
