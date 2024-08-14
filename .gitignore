@@ -1,7 +1,9 @@
 #files
 *.js
-*.json
+package.json
+package-lock.json
+tsconfig.json
+*.png
 
 #folders
-/db
 /node_modules
