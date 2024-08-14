@@ -5,6 +5,8 @@ import { JsonDb } from "..";
 
 
 const socialMedia = new JsonDb("db", "social_media")
+
+
 socialMedia.insert({ name: "Instagram", c: "Meta" }, (data: any, error: any) => {})
 socialMedia.insert({ name: "YouTube", c: "Google" }, (data: any, error: any) => {})
 socialMedia.insert({ name: "TikTok", c: "" }, (data: any, error: any) => {})

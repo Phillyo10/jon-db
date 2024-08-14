@@ -3,7 +3,6 @@
 package.json
 package-lock.json
 tsconfig.json
-*.png
 
 #folders
 /node_modules
