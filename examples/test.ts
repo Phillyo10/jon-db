@@ -21,4 +21,6 @@ socialMedia.update({ name: "Twitter" }, { name: "X" }, false, (data: any, error:
 socialMedia.find({ c: "Meta" }, (data: any, error: any) => console.log(data)) // Instagram and FaceBook
 socialMedia.findOne({ c: "Google" }, (data: any, error: any) => console.log(data)) // YouTube
 
+socialMedia.search({ name: "Y" }, (data: any, error: any) => console.log(data)) // YouTube
+
 socialMedia.delete({ name: "Twitter" }, (data: any, error: any) => {})

@@ -2,7 +2,7 @@
 
 JSON DB is a typescript based database used for making small databases for small softwares
 
-I used this database on my very recent repo, I built a micro-bloggin application called [Sema](https://github.com/Phillyo10/sema)
+I used this database on my very recent repo, I built a micro-blogging application called [Sema](https://github.com/Phillyo10/sema)
 
 I built this database because while I was using the **'nedb'** npm package, I was having troubles updating the database in real-time so I took matters into my hands and made a small db myself
 
@@ -34,6 +34,15 @@ socialMedia.insert(
 )
 ```
 
+### Search Query
+A special query for searching if fields have specific characters. ⚠ It is case-sensitive
+```js
+socialMedia.search(
+    { name: "n" },
+    (data: any, error: any) => console.log(data)
+)
+```
+
 ### Select * Query
 ```js
 socialMedia.find(
@@ -61,7 +70,7 @@ socialMedia.update(
 )
 ```
 
-### Insert Query
+### Delete Query
 ```js
 socialMedia.delete(
     { name: "Instagram", c: "Meta" },
